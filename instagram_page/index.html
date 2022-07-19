@@ -5,23 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Instagram_clone</title>
+    <link rel="stylesheet" href="style.css">
   </head>
-  <br>
+  <body>
+
     <div>
       <img
         src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
       />
       <input type="search" value="검색">
     </div>
-    <div>
+    <div id="profile">
       <img
         src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMHERAQEBQWFRUVFRYVFhUYFRcQFRYRFRcZFxUYFxkYHighGBoxJxsTITEjJSsrLi4uFyIzODMsNygtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAOYA2wMBIgACEQEDEQH/xAAcAAEAAgIDAQAAAAAAAAAAAAAABgcEBQEDCAL/xABIEAABAwIEAQYHDAkDBQAAAAABAAIDBBEFBhIhMQcTIkFRYRcyUnGBkdEUFSNCVGJykpOUobIWMzU2c3SCscEmNPAIQ1Vj4f/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwC8UREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEXF1r8Zx2mwJnOVU0cTeovcGknsaOLj3AFBsUUHwzlVw3FamKlgke98rtLXc09rNXUCXAEepTe6DlF86lzdByiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIi66iZtO1z3mzWgucexrRcn+6CC8qnKC3JsQjis6qkBLGngxvDW7/A67LzPi+LTYzK6epkdJI7i5xvt2DsHcFmZux5+Zayoq33+EedIPxYhtG30C3putMg2eXcafl+ojqog0yR6tGoXaHOaW3t12uVm4rnbEMWcXTVcxv1NeYm/VZYKPog3OE19ZVSsjgqJWvcbA+6DEPS5zgAvUHJzQVWH0YbXVIqZHO1BwIeGtsOjr+P1m/evIy2+AZmq8vSCSlmfGRxaCSxw7HMPRcPOEHsxFDOTPPLM6U5cQGTx2ErBw7nN+afwUzQEREBERAREQEREBERAREQEREBERAREQFEeVetNBhNc5psTHoH9ZDT+BKlyhXLFTmowett8VrXegOF0HlFbnCMr1WMwVFRTwukjgtzhaLnpdTR8YjiQOAsV8ZYwGXMlTFSwDpPO54hrB4zj3Bet8s4DFlumipYBZrBuetzz4zj2koPGhbZfK9N595JqbMmqaC1POdy5o+DefntHX3hULmnJl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"
         width="50px"
       />
-    </div>
     <div>
       <h2>john_with_smile</h2>
       <button>프로필 편집</button>
+    </div>
     </div>
     <div>
       <p>
@@ -34,12 +36,12 @@
         >https://github.com/johnwithsmile</a
       >
     </div>
-        </br>
-        <div>
+        </body>
+        <div class="highlight">
         <div><img src="../public/image/highlight1.jpeg" height="35px" /></div>
         <div>😎</div>
         </div>
-        <div>
+        <div class="highlight">
         <div><img src="../public/image/highlight2.jpeg" height="35px" /></div>
         <div>🥰</div>
         </div>
