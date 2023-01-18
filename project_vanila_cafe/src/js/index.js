@@ -19,7 +19,7 @@ function App() {
   // 메뉴의 이름을 입력받는건
   document
     .querySelector("#espresso-menu-name")
-    .addEventListener("keypress", (e) => {
+    .addEventListener("keyp ress", (e) => {
       // console.log(e.key) // e.key로 이벤트값을 받아올 수 있게됨, 근데 한번에 하나만 받게되므로 한번에 해야하므로 enter키일떄로 바꾼다
       if (e.key === "Enter") {
         console.log(document.querySelector("espresso-menu-name").value);

@@ -32,13 +32,11 @@ init()
 
 //functions
 function init(){
-    tempMovingItem= movingItem;
-    console.log(tempMovingItem)
-
-    
-    // for(let i = 0; i < GAME_ROWS; i++){
-    //     prependNewLine()
-    // }
+    tempMovingItem= { ...movingItem }
+    for(let i = 0; i < GAME_ROWS; i++){
+        prependNewLine()
+    }
+    renderBlocks()
 }
 
 function prependNewLine(){
@@ -53,5 +51,6 @@ function prependNewLine(){
 }
 
 function renderBlocks(){
-
+    const{type, direction, top, left} = tempMovingItem
+    console.log(type, direction, 1)
 }
