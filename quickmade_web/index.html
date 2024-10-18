@@ -1,77 +1,104 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Title</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <br>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1200px-Instagram_logo.svg.png" alt="" width="100px">
-    <input type="search" value="검색
-    ">
+<html>
+
+<head>
+  <link href="style.css" rel="stylesheet" />
+  <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet" />
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div id="top">
+    <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" />
+    <input type="search" value="🔍검색" />
     <div>
-      <img src="./image/profile.jpg" alt="" width="50px">
+      <i class="fas fa-home"></i>
+      <i class="far fa-paper-plane"></i>
+      <i class="far fa-compass"></i>
+      <i class="far fa-heart"></i>
     </div>
-    <div>
-      <h2>john_with_smile</h2>
+  </div>
+  <div id="profile">
+    <div id="profile_pic">
+      <img class="circle_pic" src="image/profile.jpg" />
+    </div>
+    <div id="profile_info">
+      <div id="id">
+        <span>john_with_smile</span>
+        <i class="fas fa-cog"></i>
+      </div>
       <button>프로필 편집</button>
     </div>
-    <div>
-      <p>
-        <strong>김정동 JeongDong Kim</strong>
-        <br/>
-        개발자
-      </p>
-      <p><a href="https://github.com/johnwithsmile">github.com/johnwithsmile</a></p>
-      <div>
-        <!-- 하이라이트가 들어갈 자리 -->
-        <div>
-          <div>
-            <img src="./image/h1.jpg" alt="" height="35px">
-          </div>
-          <div>
-            😎
-          </div>
-        </div>
-        <div>
-          <div>
-            <img src="./image/h2.jpg" alt="" height="35px">
-          </div>
-          <div>
-            '😉'
-          </div>
-        </div>
+  </div>
+  <div>
+    <p>
+      <strong id="userInfo">김정동 (Jeongdong Kim)</strong><br />
+      <span id="summary">작가</span>
+    </p>
+    <p id="profileDetail">
+      <a href="https://johnwithsmile.github.io">
+        johnwithsmile.github.io
+      </a>
+    </p>
+  </div>
+  <div id="highlight_area">
+    <div class="highlight">
+      <div class="highlight_pic">
+        <img class="circle_pic" src="./image/h1.jpg"/>
       </div>
-      <p>
-        <div>
-          게시물 <br/>
-          23
-        </div>
-        <div>
-          팔로워 <br/>
-          137
-        </div>
-        <div>
-          팔로우 <br/>
-          451
-        </div>
-      </p>
+      <div>
+        😎
+      </div>
     </div>
-    <div>아이콘이 들어갈 자리</div>
-    <div>
-      <!-- 게시물 썸네일이 들어갈 자리 -->
-      <img src="./image/1.jpg" alt="1" width="32%">
-      <img src="./image/2.jpg" alt="2" width="32%">
-      <img src="./image/3.jpg" alt="3" width="32%">
-      <img src="./image/4.jpg" alt="4" width="32%">
-      <img src="./image/5.jpg" alt="5" width="32%">
-      <img src="./image/6.jpg" alt="6" width="32%">
-      <img src="./image/7.jpg" alt="7" width="32%">
-      <img src="./image/8.jpg" alt="8" width="32%">
-      <img src="./image/9.jpg" alt="9" width="32%">
+    <div class="highlight">
+      <div class="highlight_pic">
+        <img class="circle_pic" src="./image/h2.jpg" />
+      </div>
+      <div>
+        🥰
+      </div>
     </div>
-  </body>
-  <script src="index.js"></script>
+    <div></div>
+  </div>
+  <div id="stat_bar">
+    <div class="stat">
+      게시물<br />
+      133
+    </div>
+    <div class="stat">
+      팔로워<br />
+      408
+    </div>
+    <div class="stat">
+      팔로우<br />
+      189
+    </div>
+  </div>
+  <div id="sub_icons">
+    <div class="selected">
+      <i class="fas fa-border-all"></i>
+    </div>
+    <div><i class="fas fa-film"></i></div>
+    <div><i class="far fa-play-circle"></i></div>
+    <div><i class="far fa-bookmark"></i></div>
+    <div><i class="fas fa-user-tag"></i></div>
+  </div>
+  <div>
+    <div class="thumbnail_grid">
+      <img src="image/1.jpg" class="thumbnail" />
+      <img src="image/2.jpg" class="thumbnail" />
+      <img src="image/3.jpg" class="thumbnail" />
+    </div>
+    <div class="thumbnail_grid">
+      <img src="image/4.jpg" class="thumbnail" />
+      <img src="image/5.jpg" class="thumbnail" />
+      <img src="image/6.jpg" class="thumbnail" />
+    </div>
+    <div class="thumbnail_grid">
+      <img src="image/7.jpg" class="thumbnail" />
+      <img src="image/8.jpg" class="thumbnail" />
+      <img src="image/9.jpg" class="thumbnail" />
+    </div>
+  </div>
+</body>
+
 </html>
