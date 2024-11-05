@@ -2,11 +2,22 @@
 
 <head>
   <link href="style.css" rel="stylesheet" />
-  <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet" />
-  <script src="script.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="script.js" defer></script>
 </head>
 
 <body>
+  <p>
+    keydown <input id="keydown">
+  </p>
+  <p>
+    change <input id="change">
+  </p>
+  <p>
+    input <input id="input">
+  </p>
   <div id="top">
     <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" />
     <input type="search" value="🔍검색" />
@@ -25,7 +36,7 @@
       <div id="id">
         <span>john_with_smile</span>
         <i class="fas fa-cog"></i>
-      </div>
+      </div>          
       <button>프로필 편집</button>
     </div>
   </div>
@@ -99,6 +110,8 @@
       <img src="image/9.jpg" class="thumbnail" />
     </div>
   </div>
+  <input type="button" value="버튼" onClick="numbering(5)">
 </body>
+
 
 </html>
