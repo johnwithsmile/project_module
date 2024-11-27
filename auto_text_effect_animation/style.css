@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #6667ab;
+  font-family: "Source Code Pro", monospace;
+  letter-spacing: -8px;
+}
+
+.container {
+  font-size: 50px;
+  font-weight: 900;
+}
